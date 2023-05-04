@@ -1,19 +1,15 @@
 package com.imagegallery.store.Response;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public class LoginResponse {
+public class Response {
     String message;
     Boolean status;
 
-    public LoginResponse(String message, Boolean status) {
+    public Response(String message, Boolean status) {
         this.message = message;
         this.status = status;
     }
 
-    public LoginResponse() {
+    public Response() {
     }
 
     public String getMessage() {
@@ -34,9 +30,9 @@ public class LoginResponse {
 
     @Override
     public String toString() {
-        return "LoginResponse{" +
+        return "ImageUpload{" +
                 "message='" + message + '\'' +
-                ", status='" + status + '\'' +
+                ", status=" + status +
                 '}';
     }
 }
